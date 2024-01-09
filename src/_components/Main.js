@@ -15,13 +15,15 @@ const Text = () => {
 
     const createMat = (max_rows, max_col, elements) => {
         let mat = Array(Number(max_rows)).fill(Array(Number(max_col)))
-
+        console.log(max_rows, max_col, elements);
         elements.forEach((element, i) => {
             const { LINE, COLUMN, LABEL, TYPE, VALUE } = element
-            let nElement = new Element({ label: LABEL, type: TYPE, value: VALUE })
-            let line = [...mat[LINE - 1]]
-            line[COLUMN - 1] = nElement
-            mat[LINE - 1] = line
+            if (Number(LINE)) {
+                let nElement = new Element({ label: LABEL, type: TYPE, value: VALUE })
+                let line = [...mat[LINE - 1]]
+                line[COLUMN - 1] = nElement
+                mat[LINE - 1] = line
+            }
         });
 
         setElements(mat)
@@ -65,7 +67,7 @@ const Text = () => {
     return (
         <div className="text-center mt-5">
             <div className="p-3">
-                <div className="col-5">
+                <div className="col-sm-12 col-md-5 ">
                     <div className="input-group mb-3">
                         <span className="input-group-text">{strings.textarea}</span>
                         <textarea
