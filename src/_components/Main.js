@@ -15,7 +15,6 @@ const Text = () => {
 
     const createMat = (max_rows, max_col, elements) => {
         let mat = Array(Number(max_rows)).fill(Array(Number(max_col)))
-        console.log(max_rows, max_col, elements);
         elements.forEach((element, i) => {
             const { LINE, COLUMN, LABEL, TYPE, VALUE } = element
             if (Number(LINE)) {
@@ -24,6 +23,7 @@ const Text = () => {
                 line[COLUMN - 1] = nElement
                 mat[LINE - 1] = line
             }
+            else setElements([])
         });
 
         setElements(mat)
