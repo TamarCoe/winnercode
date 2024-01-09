@@ -15,4 +15,6 @@
 <img src="./src/_assests/example1.png">
 <h3>Example with empty col/row</h3>
 <img src="./src/_assests/example2.png">
+<h3>Bonus</h3>
+<img src="./src/_assests/bonus.png">
 
