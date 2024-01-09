@@ -7,3 +7,7 @@
 <li>npm i</li>
 <li>npm start</li>
 </ul>
+
+<img src="./src/_assests/example1.PNG">
+<img src="./src/_assests/example2.PNG">
+
