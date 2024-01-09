@@ -8,6 +8,8 @@
 <li>npm start</li>
 </ul>
 
+<h3>Example</h3>
 <img src="./src/_assests/example1.png">
-<img src="./src/_assests/example2.PNG">
+<h3>Example with empty col/row</h3>
+<img src="./src/_assests/example2.png">
 
