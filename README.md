@@ -6,7 +6,10 @@
 <li>cd winnercode</li>
 <li>npm i</li>
 <li>npm start</li>
+
 </ul>
+
+<b>Bonus included 🤙</b>
 
 <h3>Example</h3>
 <img src="./src/_assests/example1.png">
